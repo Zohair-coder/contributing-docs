@@ -175,7 +175,13 @@ the following commands:
     pwsh -Command "Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force"
     ```
 
-2.  Run the setup script:
+2.  Run the Azurite instance in Docker Compose:
+
+    ```bash
+    docker compose --profile storage up -d
+    ```
+
+3.  Run the setup script:
 
     ```bash
     pwsh setup_azurite.ps1
